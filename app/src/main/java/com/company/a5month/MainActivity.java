@@ -2,6 +2,7 @@ package com.company.a5month;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.content.Context;
@@ -10,7 +11,8 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
+
+import com.google.android.gms.maps.model.LatLng;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
     @Override
     public void onLocationChanged(@NonNull Location location) {
-
+        LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("Location", latLng);
     }
 }

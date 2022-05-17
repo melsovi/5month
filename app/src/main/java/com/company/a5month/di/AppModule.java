@@ -1,7 +1,8 @@
 package com.company.a5month.di;
 
-import android.arch.persistence.room.Room;
 import android.content.Context;
+
+import androidx.room.Room;
 
 import com.company.a5month.data.remote.WeatherApi;
 import com.company.a5month.data.repositories.MainRepositoryImpl;

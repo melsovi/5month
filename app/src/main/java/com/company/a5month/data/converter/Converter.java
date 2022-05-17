@@ -1,6 +1,6 @@
 package com.company.a5month.data.converter;
 
-import android.arch.persistence.room.TypeConverter;
+import androidx.room.TypeConverter;
 
 import com.company.a5month.data.model.Clouds;
 import com.company.a5month.data.model.Coord;

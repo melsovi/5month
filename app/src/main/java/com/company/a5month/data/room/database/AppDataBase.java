@@ -1,8 +1,9 @@
 package com.company.a5month.data.room.database;
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.RoomDatabase;
-import android.arch.persistence.room.TypeConverters;
+
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
+import androidx.room.TypeConverters;
 
 import com.company.a5month.data.converter.Converter;
 import com.company.a5month.data.model.MainResponse;

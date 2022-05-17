@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.SearchFragment">
 
     <fragment
@@ -10,5 +11,29 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <EditText
+        android:padding="12dp"
+        android:background="@color/white"
+        android:id="@+id/findCityET"
+        android:hint="Write city name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchCityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findCityET" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
